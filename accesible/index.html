@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible form</title>
+    <link rel="home" href="http://www.misitio.com" title="Home"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="sr-only" href="#principal" id="saltar_cppal">Saltar al contenido principal</a>
+    <header>
+        <div class="header container">
+            <a href="#"><h1 class="logo">ESI en Casa<span role="img" aria-label="casa">🏠</span></h1></a>
+            <nav class="nav" role="navigation">
+                <ul class="menu" role="menubar">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Inicio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#sobreelproyecto" class="menu-link">Sobre el proyecto</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#videos" class="menu-link">Videos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contacto" class="menu-link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <div class="hero" role="complementary">
+        <div class="filter"></div>
+        <div class="hero-content">
+            <h2>ESI EN CASA 2020, danos tu opinión</h2>
+            <p>Si sos uno de los que ya vivio la ESI 2020, te dejamos un formulario para que nos cuentes que te parecio.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdi8h0sHbK6qFOf2KGWErkoxSz5Rm7Aofch2pXUJ-4CrcfHkg/viewform" class="btn">Ir al formulario</a>
+        </div>  
+    </div>
+    <main class="container">
+        <section id="sobreelproyecto">
+            <h2 class="title">Sobre el proyecto</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum laborum a quos culpa, quaerat aliquam deleniti architecto repellat eaque, consequuntur consectetur, nisi error dignissimos incidunt illum dolor pariatur mollitia expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum earum autem doloribus delectus consequatur odio aliquam natus. Nobis ducimus eius laboriosam eum corrupti? Obcaecati veniam quod cupiditate tempora animi dolorum!</p>
+        </section>
+        <section id="videos">
+            <h2 class="title">Videos</h2>
+            <ul class="media-list">
+                <li><iframe src="https://www.youtube.com/embed/5JTR_jF9PO8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li><iframe src="https://www.youtube.com/embed/7Y410iYN3Yc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                
+                <li><iframe src="https://www.youtube.com/embed/AGrKq-ugST8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li><iframe src="https://www.youtube.com/embed/dz3unES0VeY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li><iframe src="https://www.youtube.com/embed/QMY0SFfNLOk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+    
+                <li><iframe src="https://www.youtube.com/embed/KGgh7-byfVo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li><iframe src="https://www.youtube.com/embed/OMxpCXqOoTw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li><iframe src="https://www.youtube.com/embed/DtJ_XHFd3cs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+    
+                <li><iframe src="https://www.youtube.com/embed/5Bqs0_Z2FOg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li><iframe src="https://www.youtube.com/embed/Xc-319_W0D8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>        
+            </ul>
+        </section>
+        <section id="contacto">
+            <h2 class="title">Contacto</h2>
+            <p>Dejanos tu opinion, alguna recomendacion o simplemente un mensaje</p>
+            <div class="contact">
+                <form action="" method="">
+                    <div class="input-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre">  
+                    </div>  
+                    <div class="input-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido">
+                    </div> 
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="mail" name="email" id="email">
+                    </div>
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+                <img src="contact.svg" alt="" class="contact-img">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-text">Hecho con <span role="img" aria-lebel="corazon">💚</span> por Edgar para LINTI</p>
+    </footer>
+
+
+
+ <!--
+ -->
+    
+    <!--Scripts-->
+    <script src="menu.js"></script>
+</body>
+</html>
